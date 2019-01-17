@@ -1,4 +1,4 @@
-FROM linuxserver/tvheadend:latest
+FROM linuxserver/tvheadend:release-4.2
 
 # Download and install tvgrabpyAPI and dependencies
 RUN apk add --update py-pip && \
