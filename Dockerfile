@@ -15,3 +15,7 @@ RUN apk add --update py-pip && \
     ./setup.py install && \
     cd /tmp && \
     rm -rf /tmp/xmltv
+
+# Download comchap
+RUN wget -P /usr/bin https://raw.githubusercontent.com/BrettSheleski/comchap/master/comchap && \
+    chmod a+x /usr/bin/comchap
