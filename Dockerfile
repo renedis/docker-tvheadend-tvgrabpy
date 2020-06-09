@@ -1,8 +1,8 @@
 FROM linuxserver/tvheadend:latest
 
 # Download and install tvgrabpyAPI and dependencies
-RUN apk add --update py2-pip && \
-    pip install pytz requests && \
+RUN apk add --update py-pip && \
+    pip2 install pytz requests && \
     mkdir -p /tmp/xmltv && \
     cd /tmp/xmltv && \
     wget https://github.com/tvgrabbers/DataTree/archive/master.zip && \
