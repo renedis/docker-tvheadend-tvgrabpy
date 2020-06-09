@@ -1,7 +1,7 @@
 FROM linuxserver/tvheadend:latest
 
 # Download and install tvgrabpyAPI and dependencies
-RUN apk add --update py-pip && \
+RUN apk add --update py2-pip && \
     pip install pytz requests && \
     mkdir -p /tmp/xmltv && \
     cd /tmp/xmltv && \
