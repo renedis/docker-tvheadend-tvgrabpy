@@ -1,11 +1,13 @@
 # linuxserver/tvheadend with tvgrabpyAPI
 
+## Deprecation Notice
+Note that I will no longer maintain this repository as I don't use tvheadend anymore (not compatible with any of the available TV providers at my current address).
+
+## Introduction
+
 The Dockerfiles in this repository simply add tvgrabpyAPI to the linuxserver/tvheadend base image. Other than that, functionality is exactly the same as linuxserver/tvheadend. 
 
 tvgrabpyAPI will automatically be available in tvheadend as an internal XMLTV grabber named 'Dutch/Flamish grabber combining multiple sources.' Note that as described in the linuxserver/tvheadend documentation, you will first need to manually configure the grabber before enabling it in tvheadend.
-
-**Deprecation Notice**
-Note that I will no longer maintain this repository as I don't use tvheadend anymore (not compatible with any of the available TV providers at my current address).
 
 ## Image usage instructions 
 
