@@ -1,9 +1,5 @@
 # linuxserver/tvheadend with tvgrabpyAPI
 
-## Deprecation Notice
-
-For now I'll keep this repository, and Docker images should continue to be built automatically by Docker Hub. However I will no longer provide any updates or any other maintenance as I don't use tvheadend anymore (tvheadend is not compatible with any of the TV providers available at my current address). 
-
 ## Introduction
 
 The Dockerfiles in this repository simply add tvgrabpyAPI to the linuxserver/tvheadend base image. Other than that, functionality is exactly the same as linuxserver/tvheadend. 
