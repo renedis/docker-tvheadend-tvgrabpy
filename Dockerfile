@@ -1,9 +1,7 @@
-FROM linuxserver/tvheadend:arm64v8-latest
+FROM linuxserver/tvheadend:release-4.2
 
 # Download and install tvgrabpyAPI and dependencies
-RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && \
-    apk add --update python2 && \
-    python get-pip.py && \
+RUN apk add --update py-pip && \
     pip install pytz requests && \
     mkdir -p /tmp/xmltv && \
     cd /tmp/xmltv && \
@@ -21,4 +19,3 @@ RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && \
 # Download comchap
 RUN wget -P /usr/bin https://raw.githubusercontent.com/BrettSheleski/comchap/master/comchap && \
     chmod a+x /usr/bin/comchap
-    
