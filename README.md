@@ -27,7 +27,6 @@ docker create \
 
 #### Tags
 + **latest** : corresponds to linuxserver/tvheadend:latest
-+ **release-4.2** : corresponds to linuxserver/tvheadend:release-4.2
 
 ## tvgrabpyAPI usage instructions
 
