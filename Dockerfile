@@ -1,4 +1,4 @@
-FROM linuxserver/tvheadend:latest
+FROM linuxserver/tvheadend:arm64v8-latest
 
 # Download and install tvgrabpyAPI and dependencies
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && \
